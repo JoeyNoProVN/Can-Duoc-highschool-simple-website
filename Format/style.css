@@ -1,0 +1,232 @@
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul#main-menu .sub-menu{
+        display: none;
+    }
+ul#main-menu li:hover .sub-menu{
+    display: block;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding-bottom: 50px; /* Dảm bảo chân trang không bị ẩn */
+}
+
+marquee span {
+   margin-right: 150px;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+
+/* Định dạng đầu đề */
+header {
+    background-color: #333;
+    padding: 100px;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 1)), url(https://scontent.fsgn22-1.fna.fbcdn.net/v/t39.30808-6/472242562_1064851318774121_7387240442388841471_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=zakz1QBM5pgQ7kNvgE_N-e6&_nc_oc=AdiOQjEX8TlVXcrCe8MGLAo1sGB00-EnmFbVUUtVSbEk5VJ8QNwOVfOdWRFHsKQHVWiwHcYkHKBJZlcRUVgJGOqA&_nc_zt=23&_nc_ht=scontent.fsgn22-1.fna&_nc_gid=A19umfggUJbVIvKCntakvQf&oh=00_AYFOM-2j8xPo9K7M879RSeaPS8zbxNEcXLsoghyrH3xrpg&oe=67D3785A);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: 100% 100%;
+    background-attachment: fixed;
+}
+
+header h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    font-family: SVN-Paula Natalie;
+}
+
+header p {
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Thanh điều hướng */
+nav {
+    position: sticky;
+    top:0;
+    background-color: #000080;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    font-weight: bolder;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+table{
+    table-layout: fixed;
+}
+
+/* Khu vực nội dung chính */
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 60px;
+    gap: 20px;
+}
+
+.section {
+    background-color: white;
+    padding: 30px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.table-content {
+    padding-left: 5%;
+}
+
+.rounded-img {
+    border-radius: 50%;
+}
+
+.inline-element {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.table-pad-top{
+    padding-top: 2%;
+}
+
+table img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table a{
+    font-size: 200%;
+}
+
+
+/*.section:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}*/
+
+/* Thêm font từ tệp */
+@font-face {
+    font-family: SVN-VT Redzone Classic;
+    src: url('../Img and font/SVN-VT Redzone Classic.otf');
+}
+@font-face {
+    font-family: SVN-Paula Natalie;
+    src: url('../Img and font/SVN-Paula Natalie.otf');
+    
+}
+
+.section h2 {
+    color: #C8102E;
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: SVN-VT Redzone Classic;
+}
+
+.section p {
+    color: #333;
+    line-height: 1.6;
+    font-size: 125%;
+}
+
+.section a {
+    color: #C8102E;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.section a:hover {
+    color: #00bfff;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+  
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00bfff;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+}
+  
+.hover-underline-animation.left::after {
+    transform-origin: bottom right;
+}
+  
+.hover-underline-animation.left:hover::after {
+    transform-origin: bottom left;
+}
+
+
+/* Định dạng chân trang */
+footer {
+    background-color: #00008B;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer h1 {
+    font-size: 1.5em;
+}
+footer p {
+    font-size: 1.2em;
+}
+
+/* Hiệu ứng rê chuột qua link */
+a {
+    transition: color 0.3s ease;color:white;
+}
+
+a:hover {
+    color: #C8102E;
+}
+
+hr {
+    border-radius: 10px;
+}
